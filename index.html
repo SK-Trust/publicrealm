@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/ol-geocoder.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/ol-geocoder.js"></script>
+        <script src="layers/SouthKilburnBoundary_1.js"></script><script src="layers/WoodhouseUrbanPark_2.js"></script><script src="layers/SouthKilburnOpenSpace_3.js"></script><script src="layers/GranvilleRec_4.js"></script><script src="layers/CraikandCronePlayArea_5.js"></script><script src="layers/SouthKilburnMUGA_6.js"></script><script src="layers/PeelPlaza_7.js"></script><script src="layers/MasefieldWordsworthBlakePlayArea_8.js"></script><script src="layers/UnityPlacePlayArea_9.js"></script><script src="layers/CambridgeGardens_10.js"></script><script src="layers/TheValeCommunityCentre_11.js"></script><script src="layers/WilliamDunbarCommunityHall_12.js"></script><script src="layers/TollgateGardensCommunityCentre_13.js"></script><script src="layers/CarltonandGranvilleCentres_14.js"></script><script src="layers/GranvilleFamilyWellbeingCentre_15.js"></script><script src="layers/CraikCourtmeetingroom_16.js"></script><script src="layers/AlphaGorefieldHall_17.js"></script><script src="layers/TabotCentre_18.js"></script><script src="layers/StAugustinesSportsCentre_19.js"></script><script src="layers/HornbillHouse_20.js"></script><script src="layers/WestKilburnBaptistChurch_21.js"></script><script src="layers/UKAlbanianMosque_22.js"></script><script src="layers/SalvationArmy_23.js"></script><script src="layers/MarianCentreImmaculateHeartofMary_24.js"></script><script src="layers/StLukesChurch_25.js"></script><script src="layers/ElyCourt_26.js"></script><script src="layers/Gorefieldspace_27.js"></script><script src="layers/Alphaspace_28.js"></script><script src="layers/CarltonValeplayground_29.js"></script><script src="layers/CambridgeandKilburnParkRoadspace_30.js"></script><script src="layers/WigginsHouseandThamesCourtspace_31.js"></script><script src="layers/BirchsideandCedarSidespaces_32.js"></script><script src="layers/Bristolwalkspace_33.js"></script>
+        <script src="styles/SouthKilburnBoundary_1_style.js"></script><script src="styles/WoodhouseUrbanPark_2_style.js"></script><script src="styles/SouthKilburnOpenSpace_3_style.js"></script><script src="styles/GranvilleRec_4_style.js"></script><script src="styles/CraikandCronePlayArea_5_style.js"></script><script src="styles/SouthKilburnMUGA_6_style.js"></script><script src="styles/PeelPlaza_7_style.js"></script><script src="styles/MasefieldWordsworthBlakePlayArea_8_style.js"></script><script src="styles/UnityPlacePlayArea_9_style.js"></script><script src="styles/CambridgeGardens_10_style.js"></script><script src="styles/TheValeCommunityCentre_11_style.js"></script><script src="styles/WilliamDunbarCommunityHall_12_style.js"></script><script src="styles/TollgateGardensCommunityCentre_13_style.js"></script><script src="styles/CarltonandGranvilleCentres_14_style.js"></script><script src="styles/GranvilleFamilyWellbeingCentre_15_style.js"></script><script src="styles/CraikCourtmeetingroom_16_style.js"></script><script src="styles/AlphaGorefieldHall_17_style.js"></script><script src="styles/TabotCentre_18_style.js"></script><script src="styles/StAugustinesSportsCentre_19_style.js"></script><script src="styles/HornbillHouse_20_style.js"></script><script src="styles/WestKilburnBaptistChurch_21_style.js"></script><script src="styles/UKAlbanianMosque_22_style.js"></script><script src="styles/SalvationArmy_23_style.js"></script><script src="styles/MarianCentreImmaculateHeartofMary_24_style.js"></script><script src="styles/StLukesChurch_25_style.js"></script><script src="styles/ElyCourt_26_style.js"></script><script src="styles/Gorefieldspace_27_style.js"></script><script src="styles/Alphaspace_28_style.js"></script><script src="styles/CarltonValeplayground_29_style.js"></script><script src="styles/CambridgeandKilburnParkRoadspace_30_style.js"></script><script src="styles/WigginsHouseandThamesCourtspace_31_style.js"></script><script src="styles/BirchsideandCedarSidespaces_32_style.js"></script><script src="styles/Bristolwalkspace_33_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
